@@ -1,0 +1,19 @@
+plugins {
+    id 'java' // Java 플러그인 사용
+}
+
+group = 'com.example' // 프로젝트 그룹 ID
+version = '1.0.0' // 버전 정보
+
+repositories {
+    mavenCentral() // Maven Central 리포지토리 사용
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.7.0' // Spring Boot 예시
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2' // JUnit 테스트 의존성
+}
+
+test {
+    useJUnitPlatform() // JUnit5 플랫폼 사용 설정
+}
